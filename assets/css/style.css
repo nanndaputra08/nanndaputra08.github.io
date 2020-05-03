@@ -1,0 +1,40 @@
+body {
+    margin-top: 50px;
+}
+
+.jumbotron img {
+    width: 25%;
+}
+
+section {
+    min-height: 420px;
+}
+
+footer {
+    min-height: 50px;
+    padding-top: 12px;
+}
+
+.ig-thumbnail {
+    width: 200px;
+    height: 200px;
+    float: left;
+    overflow: hidden;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.ig-thumbnail img {
+    width: 200px;
+}
+
+
+/* Margin Custom */
+
+.ml-min-25 {
+    margin-left: -25px;
+}
+
+.ml-min-50 {
+    margin-left: -50px;
+}

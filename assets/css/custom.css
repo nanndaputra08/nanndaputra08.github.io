@@ -1,0 +1,58 @@
+/*==================================================================================
+    Custom Stylesheet (Any custom styling you want to apply should be defined here).
+====================================================================================*/
+
+
+/* Custom CSS Logo */
+
+.logo {
+    padding-top: 15px;
+    padding-bottom: -3px;
+    margin-left: -62px;
+}
+
+#disability {
+    margin-left: -158px;
+    margin-top: 25px;
+}
+
+.right-top {
+    margin-top: 100px;
+    padding-left: 190px;
+}
+
+
+/* Akhir Tambahan CSS Untuk Seting Logo */
+
+
+/* Carousel */
+
+.container_carousel {
+    margin-bottom: -67px;
+}
+
+.carousel_inner {
+    transform: scale(1, 1);
+}
+
+.carousel {
+    margin-bottom: 4rem;
+}
+
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+}
+
+.carousel-item {
+    height: 520px;
+}
+
+.carousel-item img {
+    position: absolute;
+    height: 740px;
+    max-width: 1920px;
+}
+
+
+/* Akhir Tambahan Carousel */
