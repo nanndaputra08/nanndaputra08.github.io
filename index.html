@@ -6,8 +6,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
     <!-- CSS Files -->
     <link href="https://fonts.googleapis.com/css?family=Cabin:400,400i,500i,700%7CRoboto:400,500,700" rel="stylesheet">
@@ -19,6 +17,7 @@
     <link rel="stylesheet" href="assets/css/style2.css">
     <link rel="stylesheet" href="assets/css/colors/theme-color-1.css">
     <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 
     <title>My Portfolio</title>
 </head>
@@ -31,19 +30,22 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" data-animate="fadeInDown" data-delay=".5">
         <div class="container">
             <a class="navbar-brand" href="#home" data-animate="fadeInUp" data-delay=".9">Nanda Putra Utama</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" data-animate="fadeInUp" data-delay=".9">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav" data-animate="fadeInUp" data-delay=".9">
                     <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
+                        <!-- <a class="nav-link" href="#home">HOME</a> -->
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#about">ABOUT</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link" href="#portfolio">PORTOFOLIO</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                        <a class="nav-link" href="#contact">CONTACT ME</a>
                     </li>
                 </ul>
             </div>
@@ -51,10 +53,10 @@
     </nav>
 
 
-    <div class="jumbotron" id="home" data-animate="fadeInDown" data-delay="1.4">
+    <div class="jumbotron" id="home">
         <div class="container">
-            <div class="text-center" data-animate="fadeInUp" data-delay="1.7">
-                <img src="assets/img/profile1.png" class="rounded-circle img-thumbnail">
+            <div class="text-center" data-animate="fadeInDown" data-delay="1.4">
+                <img src="assets/img/myphoto1.jpg" class="rounded-circle img-thumbnail">
                 <h1 class="display-4">Nanda Putra Utama</h1>
                 <h3 class="lead">Programmer</h3>
             </div>
@@ -63,63 +65,29 @@
 
 
     <!-- About -->
-    <section class="about" id="about" data-animate="fadeInUp" data-delay="2.1">
-        <div class="container">
+    <section class="about" id="about">
+        <div class="container" data-animate="fadeInUp" data-delay="1.8">
             <div class="row mb-4">
                 <div class="col text-center">
                     <h2>About Me</h2>
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, molestiae sunt doloribus error ullam expedita cumque blanditiis quas vero, qui, consectetur modi possimus. Consequuntur optio ad quae possimus, debitis earum.</p>
+                <div class="col-md-10">
+                    <p class="text-justify">Saya adalah orang yang sangat menyukai kemajuan/perkembangan Teknologi, selama teknologi tersebut dibuat untuk membantu, mempermudah dan meningkatkan apa yang saya lakukan maupun yang saya kerjakan. </p>
+                    <p class="text-justify">Saya selalu ingin meningkatkan pengetahuan dan kemampuan yang telah saya capai saat ini, agar itu bisa menjadikan pribadi saya yang tidak cepat puas dengan hasil yang telah saya raih</p>
+                    <br>
+                    <b><center>~ Sekian dan Terimakasih ~</center></b>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Social Media -->
-
-    <section class="social bg-light" id="social">
-        <div class="container">
-            <div class="row pt-4 mb-4">
-                <div class="col text-center">
-                    <h2>Social Media</h2>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <img src="assets/img/profile1.png" alt="" width="150" class="rounded-circle img-thumbnail">
-                        </div>
-                        <div class="col-md-4 ml-min-50 pt-2">
-                            <h3>@nanndaputra</h3>
-                            <p>230 Followers</p>
-                        </div>
-                    </div>
-                    <div class="row mt-3 pb-3">
-                        <div class="col">
-                            <div class="ig-thumbnail">
-                                <img src="assets/img/thumbs/1.png" alt="">
-                            </div>
-                            <div class="ig-thumbnail">
-                                <img src="assets/img/thumbs/2.png" alt="">
-                            </div>
-                            <div class="ig-thumbnail">
-                                <img src="assets/img/thumbs/3.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
 
     <!-- Portfolio -->
-    <section class="portfolio" id="portfolio">
-        <div class="container">
+    <section class="portfolio bg-light" id="portfolio">
+        <div class="container" data-animate="fadeInUp" data-delay=".5">
             <div class="row pt-4 mb-4">
                 <div class="col text-center">
                     <h2>Portfolio</h2>
@@ -127,68 +95,23 @@
             </div>
             <div class="row">
                 <div class="col-md mb-4">
-                    <div class="card">
-                        <img class="card-img-top" src="assets/img/thumbs/1.png" alt="Card image cap">
+                    <div class="card" data-animate="fadeInUp" data-delay=".8">
+                        <a href="http://jakmaniakranji.com"><img class="card-img-top" src="assets/img/web-page/jakmania-kranji.jpg" alt="Card image cap"></a>
                         <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md mb-4">
-                    <div class="card">
-                        <img class="card-img-top" src="assets/img/thumbs/2.png" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md mb-4">
-                    <div class="card">
-                        <img class="card-img-top" src="assets/img/thumbs/3.png" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md mb-4">
-                    <div class="card">
-                        <img class="card-img-top" src="assets/img/thumbs/4.png" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md mb-4">
-                    <div class="card">
-                        <img class="card-img-top" src="assets/img/thumbs/5.png" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md mb-4">
-                    <div class="card">
-                        <img class="card-img-top" src="assets/img/thumbs/6.png" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="card-text">Website Organisasi Jakmania Koordinator Wilayah Kranji</p>
+                            <a href="http://jakmaniakranji.com" class="lead text-dark">jakmaniakranji.com</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        </div>
     </section>
 
 
     <!-- Contact -->
-    <section class="contact bg-light" id="contact">
-        <div class="container">
+    <section class="contact" id="contact">
+        <div class="container" data-animate="fadeInUp" data-delay=".9">
             <div class="row pt-4 mb-4">
                 <div class="col text-center">
                     <h2>Contact</h2>
@@ -197,45 +120,43 @@
 
             <div class="row justify-content-center">
                 <div class="col-lg-4">
-                    <div class="card bg-primary text-white mb-4 text-center">
+                    <div class="card bg-primary text-white mb-4 text-center" data-animate="fadeInUp" data-delay="1.0">
                         <div class="card-body">
                             <h5 class="card-title">Contact Me</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="card-text">Anda bisa temui atau hubungi saya dengan info di bahwah ini.</p>
                         </div>
                     </div>
 
-                    <ul class="list-group mb-4">
+                    <ul class="list-group mb-4" data-animate="fadeInUp" data-delay=".8">
                         <li class="list-group-item">
                             <h3>Location</h3>
                         </li>
                         <li class="list-group-item">My Office</li>
-                        <li class="list-group-item">Jl. Setiabudhi No. 193, Bandung</li>
+                        <li class="list-group-item">Jl. Budiluhur RT 006 RW 003 No. 15, Bintara Jaya, Bekasi Barat</li>
                         <li class="list-group-item">West Java, Indonesia</li>
                     </ul>
                 </div>
 
                 <div class="col-lg-6">
 
-                    <form>
+                    <form data-animate="fadeInUp" data-delay="1.0">
                         <div class="form-group">
-                            <label for="nama">Nama</label>
-                            <input type="text" class="form-control" id="nama">
+                            <label for="nama">Name</label>
+                            <input type="text" class="form-control" id="nama" placeholder="Nanda Putra Utama" readonly>
                         </div>
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="text" class="form-control" id="email">
+                            <input type="text" class="form-control" id="email" placeholder="nanndaputraa08@gmail.com" readonly>
                         </div>
                         <div class="form-group">
                             <label for="phone">Phone Number</label>
-                            <input type="text" class="form-control" id="phone">
+                            <input type="text" class="form-control" id="phone" placeholder="0812-812-106-52" readonly>
                         </div>
                         <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea class="form-control" id="message" rows="3"></textarea>
+                            <label for="message">Message From Me</label>
+                            <textarea class="form-control text-justify" id="message" rows="3" readonly>This life just about choice, if your choice is wrong you must can receive your risk on your choice and don't give up to make better your life.</textarea>
                         </div>
-                        <div class="form-group">
-                            <button type="button" class="btn btn-primary">Send Message</button>
-                        </div>
+
                     </form>
 
                 </div>
