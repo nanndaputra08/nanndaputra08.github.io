@@ -30,7 +30,7 @@ We may release future updates so it will overwrite this file. it's better and sa
 
 (function($) {
     "use strict";
-    $(function(){
+    $(function() {
 
         // FontAwesomeConfig = { searchPseudoElements: true };
 
@@ -47,14 +47,14 @@ We may release future updates so it will overwrite this file. it's better and sa
         });
 
         var mainHeader = $('.main-header');
-        
-        if(mainHeader.length) {
+
+        if (mainHeader.length) {
             var sticky = new Waypoint.Sticky({
                 element: mainHeader[0]
             });
         }
 
-        
+
         /* 02: Movable image
         ==============================================*/
 
@@ -64,13 +64,13 @@ We may release future updates so it will overwrite this file. it's better and sa
             var parallaxImage = new Parallax(moveableImage[0]);
         }
 
-        
+
         /* 03: Background image
         ==============================================*/
 
         var bgImg = $('[data-bg-img]');
 
-        bgImg.css('background', function(){
+        bgImg.css('background', function() {
             return 'url(' + $(this).data('bg-img') + ') center top';
         });
 
@@ -83,14 +83,14 @@ We may release future updates so it will overwrite this file. it's better and sa
 
         /* 05: Smooth scroll for comment reply
         ==============================================*/
-        
+
         var $commentContent = $('.comment-content > a');
-        
-        $commentContent.on('click', function(event){
+
+        $commentContent.on('click', function(event) {
             event.preventDefault();
             var $target = $('.comment-form');
-            
-            if ( $target.length ) {
+
+            if ($target.length) {
                 $('html, body').animate({
                     scrollTop: $target.offset().top - 120
                 }, 500);
@@ -99,10 +99,10 @@ We may release future updates so it will overwrite this file. it's better and sa
             }
         });
 
-        
+
         /* 06: Pricing slider
         ==============================================*/
-        
+
         var pricingSlider = new Swiper('.pricing-slider', {
             slidesPerView: 3,
             loop: true,
@@ -120,10 +120,10 @@ We may release future updates so it will overwrite this file. it's better and sa
             }
         });
 
-        
+
         /* 07: Review slider
         ==============================================*/
-        
+
         var reviewSlider = new Swiper('.review-slider', {
             slidesPerView: 3,
             spaceBetween: 30,
@@ -148,20 +148,20 @@ We may release future updates so it will overwrite this file. it's better and sa
             }
         });
 
-        
+
         /* 08: Video popup
         ==============================================*/
 
         var $youtubePopup = $('.youtube-popup');
 
-        if($youtubePopup.length) {
+        if ($youtubePopup.length) {
 
             $youtubePopup.magnificPopup({
-                type:'iframe'
+                type: 'iframe'
             });
         }
 
-        
+
         /* 09: Back to top button
         ==============================================*/
 
@@ -169,22 +169,22 @@ We may release future updates so it will overwrite this file. it's better and sa
 
         if ($backToTopBtn.length) {
             var scrollTrigger = 400, // px
-            backToTop = function () {
-                var scrollTop = $(window).scrollTop();
-                if (scrollTop > scrollTrigger) {
-                    $backToTopBtn.addClass('show');
-                } else {
-                    $backToTopBtn.removeClass('show');
-                }
-            };
+                backToTop = function() {
+                    var scrollTop = $(window).scrollTop();
+                    if (scrollTop > scrollTrigger) {
+                        $backToTopBtn.addClass('show');
+                    } else {
+                        $backToTopBtn.removeClass('show');
+                    }
+                };
 
             backToTop();
 
-            $(window).on('scroll', function () {
+            $(window).on('scroll', function() {
                 backToTop();
             });
 
-            $backToTopBtn.on('click', function (e) {
+            $backToTopBtn.on('click', function(e) {
                 e.preventDefault();
                 $('html,body').animate({
                     scrollTop: 0
@@ -192,51 +192,51 @@ We may release future updates so it will overwrite this file. it's better and sa
             });
         }
 
-        
+
         /* 10: Changing svg color
         ==============================================*/
 
-        jQuery('img.svg').each(function(){
+        jQuery('img.svg').each(function() {
             var $img = jQuery(this);
             var imgID = $img.attr('id');
             var imgClass = $img.attr('class');
             var imgURL = $img.attr('src');
-        
+
             jQuery.get(imgURL, function(data) {
                 // Get the SVG tag, ignore the rest
                 var $svg = jQuery(data).find('svg');
-        
+
                 // Add replaced image's ID to the new SVG
-                if(typeof imgID !== 'undefined') {
+                if (typeof imgID !== 'undefined') {
                     $svg = $svg.attr('id', imgID);
                 }
                 // Add replaced image's classes to the new SVG
-                if(typeof imgClass !== 'undefined') {
-                    $svg = $svg.attr('class', imgClass+' replaced-svg');
+                if (typeof imgClass !== 'undefined') {
+                    $svg = $svg.attr('class', imgClass + ' replaced-svg');
                 }
-        
+
                 // Remove any invalid XML tags as per http://validator.w3.org
                 $svg = $svg.removeAttr('xmlns:a');
-                
+
                 // Check if the viewport is set, else we gonna set it if we can.
-                if(!$svg.attr('viewBox') && $svg.attr('height') && $svg.attr('width')) {
+                if (!$svg.attr('viewBox') && $svg.attr('height') && $svg.attr('width')) {
                     $svg.attr('viewBox', '0 0 ' + $svg.attr('height') + ' ' + $svg.attr('width'));
                 }
-        
+
                 // Replace image with new SVG
                 $img.replaceWith($svg);
-        
+
             }, 'xml');
         });
 
-        
+
         /* 11: Typed JS
         ==============================================*/
 
         var typedElement = '.typed',
             typedTarget = $(typedElement);
 
-        if(typedTarget.length) {
+        if (typedTarget.length) {
             var typed = new Typed(typedElement, {
                 strings: ['Start your business with award winning company.', 'Get ready to get summer big discount!'],
                 typeSpeed: 50,
@@ -248,7 +248,7 @@ We may release future updates so it will overwrite this file. it's better and sa
         var typedElementSecond = '.typed-second',
             typedTargetSecond = $(typedElementSecond);
 
-        if(typedTargetSecond.length) {
+        if (typedTargetSecond.length) {
             var typed = new Typed(typedElementSecond, {
                 strings: ['Responsive.', 'Retina Ready.', 'Bootstrap 4 Supported.'],
                 typeSpeed: 50,
@@ -258,11 +258,11 @@ We may release future updates so it will overwrite this file. it's better and sa
         }
     });
 
-    
+
     /* 12: Preloader
     ==============================================*/
 
-    $(window).on('load', function(){
+    $(window).on('load', function() {
 
         function removePreloader() {
             var preLoader = $('.preLoader');
@@ -275,26 +275,26 @@ We may release future updates so it will overwrite this file. it's better and sa
     /* 13: Content animation
     ==============================================*/
 
-    $(window).on('load', function(){
+    $(window).on('load', function() {
 
         var $animateEl = $('[data-animate]');
 
-        $animateEl.each(function () {
+        $animateEl.each(function() {
             var $el = $(this),
                 $name = $el.data('animate'),
                 $duration = $el.data('duration'),
                 $delay = $el.data('delay');
 
-            $duration = typeof $duration === 'undefined' ? '0.6' : $duration ;
-            $delay = typeof $delay === 'undefined' ? '0' : $delay ;
+            $duration = typeof $duration === 'undefined' ? '0.6' : $duration;
+            $delay = typeof $delay === 'undefined' ? '0' : $delay;
 
-            $el.waypoint(function () {
+            $el.waypoint(function() {
                 $el.addClass('animated ' + $name)
-                   .css({
+                    .css({
                         'animation-duration': $duration + 's',
                         'animation-delay': $delay + 's'
-                   });
-            }, {offset: '93%'});
+                    });
+            }, { offset: '93%' });
         });
     });
 
