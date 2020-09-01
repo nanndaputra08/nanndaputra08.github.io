@@ -1,572 +1,841 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <!-- CSS Files -->
-    <link href="https://fonts.googleapis.com/css?family=Cabin:400,400i,500i,700%7CRoboto:400,500,700" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
-    <link rel="stylesheet" href="assets/plugins/swiper/swiper.min.css">
-    <link rel="stylesheet" href="assets/plugins/magnific-popup/magnific-popup.min.css">
-    <link rel="stylesheet" href="assets/plugins/color-switcher/color-switcher.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/style2.css">
-    <link rel="stylesheet" href="assets/css/colors/theme-color-1.css">
-    <link rel="stylesheet" href="assets/css/custom.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Cabin:400,400i,500i,700%7CRoboto:400,500,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/plugins/swiper/swiper.min.css" />
+    <link
+      rel="stylesheet"
+      href="assets/plugins/magnific-popup/magnific-popup.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/plugins/color-switcher/color-switcher.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style2.css" />
+    <link rel="stylesheet" href="assets/css/colors/theme-color-1.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
 
     <title>My Profile</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Pre Loader Site-->
     <div class="preLoader"></div>
 
     <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" data-animate="fadeInDown" data-delay=".5">
-        <div class="container">
-            <a class="navbar-brand" href="#home" data-animate="fadeInUp" data-delay=".9">Nanda Putra Utama</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" data-animate="fadeInUp" data-delay=".9">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav" data-animate="fadeInUp" data-delay=".9">
-                    <li class="nav-item">
-                        <!-- <a class="nav-link" href="#home">HOME</a> -->
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="#about">ABOUT ME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">SKILLS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">PORTOFOLIO</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#certificate">CERTIFICATE</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">CONTACT ME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#experience">EXPERIENCE</a>
-                    </li>
-
-                </ul>
-            </div>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"
+      data-animate="fadeInDown"
+      data-delay=".5"
+    >
+      <div class="container">
+        <a
+          class="navbar-brand"
+          href="#home"
+          data-animate="fadeInUp"
+          data-delay=".9"
+          >Nanda Putra Utama</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          data-animate="fadeInUp"
+          data-delay=".9"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav" data-animate="fadeInUp" data-delay=".9">
+            <li class="nav-item">
+              <!-- <a class="nav-link" href="#home">HOME</a> -->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">ABOUT ME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">SKILLS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">PORTOFOLIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#certificate">CERTIFICATE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">CONTACT ME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">EXPERIENCE</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
-
     <div class="jumbotron" id="home">
-        <div class="container">
-            <div class="text-center" data-animate="fadeInDown" data-delay="1.4">
-                <img src="assets/img/Me.jpg" class="rounded-circle img-thumbnail">
-                <h1 class="display-4">Nanda Putra Utama</h1>
-                <h3 class="lead">Programmer</h3>
-            </div>
+      <div class="container">
+        <div class="text-center" data-animate="fadeInDown" data-delay="1.4">
+          <img src="assets/img/Me.jpg" class="rounded-circle img-thumbnail" />
+          <h1 class="display-4">Nanda Putra Utama</h1>
+          <h3 class="lead">Programmer</h3>
         </div>
+      </div>
     </div>
-
 
     <!-- About -->
     <section class="about" id="about">
-        <div class="container" data-animate="fadeInUp" data-delay="1.8">
-            <div class="row mb-4">
-                <div class="col text-center">
-                    <h2>About Me</h2>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-md-10">
-                    <p class="text-justify">Saya adalah orang yang sangat menyukai kemajuan/perkembangan Teknologi, selama teknologi tersebut dibuat untuk membantu, mempermudah dan meningkatkan apa yang saya lakukan maupun yang saya kerjakan. </p>
-                    <p class="text-justify">Saya selalu ingin meningkatkan pengetahuan dan kemampuan yang telah saya capai saat ini, agar itu bisa menjadikan pribadi saya yang tidak cepat puas dengan hasil yang telah saya raih</p>
-                    <br>
-                    <b><center>~ Sekian dan Terimakasih ~</center></b>
-                </div>
-            </div>
+      <div class="container" data-animate="fadeInUp" data-delay="1.8">
+        <div class="row mb-4">
+          <div class="col text-center">
+            <h2>About Me</h2>
+          </div>
         </div>
+        <div class="row justify-content-center">
+          <div class="col-md-10">
+            <p class="text-justify">
+              Saya adalah orang yang sangat menyukai kemajuan/perkembangan
+              Teknologi, selama teknologi tersebut dibuat untuk membantu,
+              mempermudah dan meningkatkan apa yang saya lakukan maupun yang
+              saya kerjakan.
+            </p>
+            <p class="text-justify">
+              Saya selalu ingin meningkatkan pengetahuan dan kemampuan yang
+              telah saya capai saat ini, agar itu bisa menjadikan pribadi saya
+              yang tidak cepat puas dengan hasil yang telah saya raih
+            </p>
+            <br />
+            <b><center>~ Sekian dan Terimakasih ~</center></b>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Skills -->
     <section class="skills bg-light" id="skills">
-        <div class="container" data-animate="fadeInUp" data-delay=".8">
-            <div class="row pt-4 mb-4">
-                <div class="col text-center">
-                    <h2>Skills</h2>
-                </div>
-            </div>
-            <div class="row pt-2 mb-4" data-animate="fadeInUp" data-delay="1.1">
-                <div class="col text-center">
-                    <h3>Operating System</h3>
-                </div>
-                <div class="container">
-                    <div class="row mt-3">
-                        <div class="col-md-2 text-left">
-                            <h4>Windows 10</h4>
-                        </div>
-                        <div class="col-md-10">
-                            <div class="progress">
-                                <div class="progress-bar bg-dark" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mt-4">
-                        <div class="col-md-2 text-left">
-                            <h4>Windows 7</h4>
-                        </div>
-                        <div class="col-md-10">
-                            <div class="progress">
-                                <div class="progress-bar bg-dark" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mt-4">
-                        <div class="col-md-2 text-left">
-                            <h4>Ubuntu Server</h4>
-                        </div>
-                        <div class="col-md-10">
-                            <div class="progress">
-                                <div class="progress-bar bg-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row pt-2 mb-2" data-animate="fadeInUp" data-delay=".8">
-                <div class="col text-center">
-                    <h3>Programming Language</h3>
-                </div>
-                <div class="container">
-                    <div class="row mt-3">
-                        <div class="col-md-2 text-left">
-                            <h4>HTML</h4>
-                        </div>
-                        <div class="col-md-10">
-                            <div class="progress">
-                                <div class="progress-bar bg-dark" role="progressbar" style="width: 83%" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mt-4">
-                        <div class="col-md-2 text-left">
-                            <h4>CSS</h4>
-                        </div>
-                        <div class="col-md-10">
-                            <div class="progress">
-                                <div class="progress-bar bg-dark" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mt-4">
-                        <div class="col-md-2 text-left">
-                            <h4>PHP</h4>
-                        </div>
-                        <div class="col-md-10">
-                            <div class="progress">
-                                <div class="progress-bar bg-dark" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mt-4">
-                        <div class="col-md-2 text-left">
-                            <h4>SQL</h4>
-                        </div>
-                        <div class="col-md-10">
-                            <div class="progress">
-                                <div class="progress-bar bg-dark" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mt-4">
-                        <div class="col-md-2 text-left">
-                            <h4>JavaScript</h4>
-                        </div>
-                        <div class="col-md-10">
-                            <div class="progress">
-                                <div class="progress-bar bg-dark" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mt-4">
-                        <div class="col-md-2 text-left">
-                            <h4>Kotlin</h4>
-                        </div>
-                        <div class="col-md-10">
-                            <div class="progress">
-                                <div class="progress-bar bg-dark" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mt-4">
-                        <div class="col-md-2 text-left">
-                            <h4>NODE JS</h4>
-                        </div>
-                        <div class="col-md-10">
-                            <div class="progress">
-                                <div class="progress-bar bg-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row pt-2 mb-2" data-animate="fadeInUp" data-delay=".8">
-                <div class="col text-center">
-                    <h3>Library Programming Language</h3>
-                </div>
-                <div class="container">
-                    <div class="row mt-3">
-                        <div class="col-md-2 text-left">
-                            <h4>jQuery & AJAX</h4>
-                        </div>
-                        <div class="col-md-10">
-                            <div class="progress">
-                                <div class="progress-bar bg-dark" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row pt-2 mb-2" data-animate="fadeInUp" data-delay=".8">
-                <div class="col text-center">
-                    <h3>Framework Programming Language</h3>
-                </div>
-                <div class="container">
-                    <div class="row mt-3">
-                        <div class="col-md-2 text-left">
-                            <h4>CodeIgniter</h4>
-                        </div>
-                        <div class="col-md-10">
-                            <div class="progress">
-                                <div class="progress-bar bg-dark" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mt-4">
-                        <div class="col-md-2 text-left">
-                            <h4>Bootstrap</h4>
-                        </div>
-                        <div class="col-md-10">
-                            <div class="progress">
-                                <div class="progress-bar bg-dark" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mt-3">
-                        <div class="col-md-2 text-left">
-                            <h4>Express JS</h4>
-                        </div>
-                        <div class="col-md-10">
-                            <div class="progress">
-                                <div class="progress-bar bg-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row pt-2 mb-2" data-animate="fadeInUp" data-delay=".8">
-                <div class="col text-center">
-                    <h3>Database Management System</h3>
-                </div>
-                <div class="container">
-                    <div class="row mt-3">
-                        <div class="col-md-2 text-left">
-                            <h4>MySQL</h4>
-                        </div>
-                        <div class="col-md-10">
-                            <div class="progress">
-                                <div class="progress-bar bg-dark" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mt-3">
-                        <div class="col-md-2 text-left">
-                            <h4>ORACLE</h4>
-                        </div>
-                        <div class="col-md-10">
-                            <div class="progress">
-                                <div class="progress-bar bg-dark" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row pt-2 mb-10" data-animate="fadeInUp" data-delay=".8">
-                <div class="col text-center">
-                    <h3>Version Control System</h3>
-                </div>
-                <div class="container mb-4">
-                    <div class="row mt-3">
-                        <div class="col-md-2 text-left">
-                            <h4>Git and GitHub</h4>
-                        </div>
-                        <div class="col-md-10">
-                            <div class="progress">
-                                <div class="progress-bar bg-dark" role="progressbar" style="width: 53%" aria-valuenow="53" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container" data-animate="fadeInUp" data-delay=".8">
+        <div class="row pt-4 mb-4">
+          <div class="col text-center">
+            <h2>Skills</h2>
+          </div>
         </div>
+        <div class="row pt-2 mb-4" data-animate="fadeInUp" data-delay="1.1">
+          <div class="col text-center">
+            <h3>Operating System</h3>
+          </div>
+          <div class="container">
+            <div class="row mt-3">
+              <div class="col-md-2 text-left">
+                <h4>Windows 10</h4>
+              </div>
+              <div class="col-md-10">
+                <div class="progress">
+                  <div
+                    class="progress-bar bg-dark"
+                    role="progressbar"
+                    style="width: 85%"
+                    aria-valuenow="85"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-4">
+              <div class="col-md-2 text-left">
+                <h4>Windows 7</h4>
+              </div>
+              <div class="col-md-10">
+                <div class="progress">
+                  <div
+                    class="progress-bar bg-dark"
+                    role="progressbar"
+                    style="width: 75%"
+                    aria-valuenow="75"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-4">
+              <div class="col-md-2 text-left">
+                <h4>Ubuntu Server</h4>
+              </div>
+              <div class="col-md-10">
+                <div class="progress">
+                  <div
+                    class="progress-bar bg-dark"
+                    role="progressbar"
+                    style="width: 20%"
+                    aria-valuenow="20"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row pt-2 mb-2" data-animate="fadeInUp" data-delay=".8">
+          <div class="col text-center">
+            <h3>Programming Language</h3>
+          </div>
+          <div class="container">
+            <div class="row mt-3">
+              <div class="col-md-2 text-left">
+                <h4>HTML</h4>
+              </div>
+              <div class="col-md-10">
+                <div class="progress">
+                  <div
+                    class="progress-bar bg-dark"
+                    role="progressbar"
+                    style="width: 83%"
+                    aria-valuenow="83"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-4">
+              <div class="col-md-2 text-left">
+                <h4>CSS</h4>
+              </div>
+              <div class="col-md-10">
+                <div class="progress">
+                  <div
+                    class="progress-bar bg-dark"
+                    role="progressbar"
+                    style="width: 70%"
+                    aria-valuenow="70"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-4">
+              <div class="col-md-2 text-left">
+                <h4>PHP</h4>
+              </div>
+              <div class="col-md-10">
+                <div class="progress">
+                  <div
+                    class="progress-bar bg-dark"
+                    role="progressbar"
+                    style="width: 75%"
+                    aria-valuenow="75"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-4">
+              <div class="col-md-2 text-left">
+                <h4>SQL</h4>
+              </div>
+              <div class="col-md-10">
+                <div class="progress">
+                  <div
+                    class="progress-bar bg-dark"
+                    role="progressbar"
+                    style="width: 65%"
+                    aria-valuenow="65"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-4">
+              <div class="col-md-2 text-left">
+                <h4>JavaScript</h4>
+              </div>
+              <div class="col-md-10">
+                <div class="progress">
+                  <div
+                    class="progress-bar bg-dark"
+                    role="progressbar"
+                    style="width: 50%"
+                    aria-valuenow="50"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-4">
+              <div class="col-md-2 text-left">
+                <h4>Kotlin</h4>
+              </div>
+              <div class="col-md-10">
+                <div class="progress">
+                  <div
+                    class="progress-bar bg-dark"
+                    role="progressbar"
+                    style="width: 15%"
+                    aria-valuenow="15"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-4">
+              <div class="col-md-2 text-left">
+                <h4>NODE JS</h4>
+              </div>
+              <div class="col-md-10">
+                <div class="progress">
+                  <div
+                    class="progress-bar bg-dark"
+                    role="progressbar"
+                    style="width: 20%"
+                    aria-valuenow="20"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row pt-2 mb-2" data-animate="fadeInUp" data-delay=".8">
+          <div class="col text-center">
+            <h3>Library Programming Language</h3>
+          </div>
+          <div class="container">
+            <div class="row mt-3">
+              <div class="col-md-2 text-left">
+                <h4>jQuery & AJAX</h4>
+              </div>
+              <div class="col-md-10">
+                <div class="progress">
+                  <div
+                    class="progress-bar bg-dark"
+                    role="progressbar"
+                    style="width: 55%"
+                    aria-valuenow="55"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row pt-2 mb-2" data-animate="fadeInUp" data-delay=".8">
+          <div class="col text-center">
+            <h3>Framework Programming Language</h3>
+          </div>
+          <div class="container">
+            <div class="row mt-3">
+              <div class="col-md-2 text-left">
+                <h4>CodeIgniter</h4>
+              </div>
+              <div class="col-md-10">
+                <div class="progress">
+                  <div
+                    class="progress-bar bg-dark"
+                    role="progressbar"
+                    style="width: 65%"
+                    aria-valuenow="65"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-4">
+              <div class="col-md-2 text-left">
+                <h4>Bootstrap</h4>
+              </div>
+              <div class="col-md-10">
+                <div class="progress">
+                  <div
+                    class="progress-bar bg-dark"
+                    role="progressbar"
+                    style="width: 60%"
+                    aria-valuenow="60"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-md-2 text-left">
+                <h4>Express JS</h4>
+              </div>
+              <div class="col-md-10">
+                <div class="progress">
+                  <div
+                    class="progress-bar bg-dark"
+                    role="progressbar"
+                    style="width: 20%"
+                    aria-valuenow="20"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row pt-2 mb-2" data-animate="fadeInUp" data-delay=".8">
+          <div class="col text-center">
+            <h3>Database Management System</h3>
+          </div>
+          <div class="container">
+            <div class="row mt-3">
+              <div class="col-md-2 text-left">
+                <h4>MySQL</h4>
+              </div>
+              <div class="col-md-10">
+                <div class="progress">
+                  <div
+                    class="progress-bar bg-dark"
+                    role="progressbar"
+                    style="width: 65%"
+                    aria-valuenow="65"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-md-2 text-left">
+                <h4>ORACLE</h4>
+              </div>
+              <div class="col-md-10">
+                <div class="progress">
+                  <div
+                    class="progress-bar bg-dark"
+                    role="progressbar"
+                    style="width: 30%"
+                    aria-valuenow="30"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row pt-2 mb-10" data-animate="fadeInUp" data-delay=".8">
+          <div class="col text-center">
+            <h3>Version Control System</h3>
+          </div>
+          <div class="container mb-4">
+            <div class="row mt-3">
+              <div class="col-md-2 text-left">
+                <h4>Git and GitHub</h4>
+              </div>
+              <div class="col-md-10">
+                <div class="progress">
+                  <div
+                    class="progress-bar bg-dark"
+                    role="progressbar"
+                    style="width: 53%"
+                    aria-valuenow="53"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="experience" id="experience">
-        <div class="container" data-animate="fadeInUp" data-delay=".8">
-            <div class="row pt-4 mb-4">
-                <div class="col text-center">
-                    <h2>Work Experience</h2>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 text-left">
-                        <h3>Jan-2020 s/d Jun-2020</h3>
-                    </div>
-                    <div class="col-md-9">
-                        <h3><b>PT Graha Karya Informasi, Jakarta</b></h3>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <h4>Programmer (Web Developer)</h4>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <p class="text-justify">
-                                    Menjadi Web Developer untuk mengerjakan project di PT Asuransi Jiwasraya (PERSERO) yang bernama SUDEWA, dimana PT Asuransi Jiwasraya (Persero) selaku sebagai Customer PT Graha Karya Informasi, sekaligus menjadi Team Leader pada team Programmer untuk Project
-                                    tersebut.
-                                </p>
-
-                            </div>
-                        </div>
-                        <div class="row mt-2">
-                            <div class="col">
-                                <a href="assets/pdf/SKT Nanda Putra Utama.pdf" target="_blank">
-                                    <h3 style="color:blue; text-decoration: underline;">Surat Paklaring</h3>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container" data-animate="fadeInUp" data-delay=".8">
+        <div class="row pt-4 mb-4">
+          <div class="col text-center">
+            <h2>Work Experience</h2>
+          </div>
         </div>
-
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 text-left">
+              <h3>Jan-2020 s/d Jun-2020</h3>
+            </div>
+            <div class="col-md-9">
+              <h3><b>PT Graha Karya Informasi, Jakarta</b></h3>
+              <div class="row">
+                <div class="col-md-6">
+                  <h4>Programmer (Web Developer)</h4>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <p class="text-justify">
+                    Menjadi Web Developer untuk mengerjakan project di PT
+                    Asuransi Jiwasraya (PERSERO) yang bernama SUDEWA, dimana PT
+                    Asuransi Jiwasraya (Persero) selaku sebagai Customer PT
+                    Graha Karya Informasi, sekaligus menjadi Team Leader pada
+                    team Programmer untuk Project tersebut.
+                  </p>
+                </div>
+              </div>
+              <div class="row mt-2">
+                <div class="col">
+                  <a
+                    href="assets/pdf/SKT Nanda Putra Utama.pdf"
+                    target="_blank"
+                  >
+                    <h3 style="color: blue; text-decoration: underline">
+                      Surat Paklaring
+                    </h3>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Portfolio -->
     <section class="portfolio bg-light" id="portfolio">
-        <div class="container" data-animate="fadeInUp" data-delay=".5">
-            <div class="row pt-4 mb-4">
-                <div class="col text-center">
-                    <h2>Portfolio</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md mb-4">
-                    <div class="card" data-animate="fadeInUp" data-delay=".8">
-                        <a href="http://jakmaniakranji.com"><img class="card-img-top" src="assets/img/web-page/jakmania-kranji.jpg" alt="Card image cap"></a>
-                        <div class="card-body">
-                            <p class="card-text">Website Organisasi Jakmania Koordinator Wilayah Kranji</p>
-                            <a href="http://jakmaniakranji.com" class="lead text-dark">jakmaniakranji.com</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container" data-animate="fadeInUp" data-delay=".5">
+        <div class="row pt-4 mb-4">
+          <div class="col text-center">
+            <h2>Portfolio</h2>
+          </div>
         </div>
+        <div class="row">
+          <div class="col-md mb-4">
+            <div class="card" data-animate="fadeInUp" data-delay=".8">
+              <a href="http://jakmaniakranji.com"
+                ><img
+                  class="card-img-top"
+                  src="assets/img/web-page/jakmania-kranji.jpg"
+                  alt="Card image cap"
+              /></a>
+              <div class="card-body">
+                <p class="card-text">
+                  Website Organisasi Jakmania Koordinator Wilayah Kranji
+                </p>
+                <a href="http://jakmaniakranji.com" class="lead text-dark"
+                  >jakmaniakranji.com</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Sertification -->
     <section class="certificate" id="certificate">
-        <div class="container" data-animate="fadeInUp" data-delay=".8">
-            <div class="row pt-4 mb-4">
-                <div class="col text-center">
-                    <h2>Certificate</h2>
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="col text-center">
-                    <h3 class="mb-3">Competence</h3>
-                </div>
-                <div class="row">
-                    <div class="col-md mb-4" data-animate="fadeInUp" data-delay=".8">
-                        <div class="card">
-                            <img class="card-img-top" src="assets/img/sertifikat/Memulai Pemrograman Dengan Dart.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <p class="card-text">Sertifikasi pelatihan Pemrograman yang diselenggarakan oleh Dicoding Indonesia
-                                </p>
-                                <b>Memulai Bahasa Pemrograman Dengan Dart.</b>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md mb-4" data-animate="fadeInUp" data-delay=".8">
-                        <div class="card">
-                            <img class="card-img-top" src="assets/img/sertifikat/Sertifikat Belajar Membuat Aplikasi Android untuk Pemula.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <p class="card-text">Sertifikasi pelatihan Pemrograman yang diselenggarakan oleh Dicoding Indonesia
-                                </p>
-                                <b>Belajar Membuat Aplikasi Android untuk Pemula.</b>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="row">
-                    <div class="col-md mb-4" data-animate="fadeInUp" data-delay=".8">
-                        <div class="card">
-                            <img class="card-img-top" src="assets/img/sertifikat/Seritfikat Memulai Pemrograman Dengan Kotlin.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <p class="card-text">Sertifikasi pelatihan Pemrograman yang diselenggarakan oleh Dicoding Indonesia
-                                </p>
-                                <b>Memulai Pemrograman dengan Kotlin.</b>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="col text-center">
-                    <h3 class="mb-3">Event</h3>
-                </div>
-                <div class="row">
-                    <div class="col-md mb-4" data-animate="fadeInUp" data-delay=".8">
-                        <div class="card">
-                            <img class="card-img-top" src="assets/img/sertifikat/Intro to Software Product Management Certificate.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <p class="card-text">Serfitkat dari seminar online yang diselenggarakan oleh Dicoding Indonesia
-                                </p>
-                                <b>Indtro to Software Product Management.</b>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md mb-4" data-animate="fadeInUp" data-delay=".8">
-                        <div class="card">
-                            <img class="card-img-top" src="assets/img/sertifikat/Tips Menulis Kode yang Konsisten di JavaScript_ Metode ESLint! Certificate.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <p class="card-text">Serfitkat dari seminar online yang diselenggarakan oleh Dicoding Indonesia
-                                </p>
-                                <b>Tips Menulis Kode yang Konsisten di JavaScript_ Metode ESLint.</b>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md mb-4" data-animate="fadeInUp" data-delay=".8">
-                        <div class="card">
-                            <img class="card-img-top" src="assets/img/sertifikat/Memulai Karir menjadi iOS Developer.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <p class="card-text">Serfitkat dari seminar online yang diselenggarakan oleh Dicoding Indonesia
-                                </p>
-                                <b>Memulai Karir menjadi iOS Developer.</b>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md mb-4" data-animate="fadeInUp" data-delay=".8">
-                        <div class="card">
-                            <img class="card-img-top" src="assets/img/sertifikat/SQLite vs Room di Android Certificate.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <p class="card-text">Serfitkat dari seminar online yang diselenggarakan oleh Dicoding Indonesia
-                                </p>
-                                <b>SQLite vs Room di Android Certificate.</b>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+      <div class="container" data-animate="fadeInUp" data-delay=".8">
+        <div class="row pt-4 mb-4">
+          <div class="col text-center">
+            <h2>Certificate</h2>
+          </div>
         </div>
-    </section>
 
+        <div class="container">
+          <div class="col text-center">
+            <h3 class="mb-3">Competence</h3>
+          </div>
+          <div class="row">
+            <div class="col-md mb-4" data-animate="fadeInUp" data-delay=".8">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="assets/img/sertifikat/Belajar Dasar Pemrograman Web.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <p class="card-text">
+                    Sertifikasi pelatihan Pemrograman yang diselenggarakan oleh
+                    Dicoding Indonesia
+                  </p>
+                  <b>Belajar Dasar Pemrograman Web.</b>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md mb-4" data-animate="fadeInUp" data-delay=".8">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="assets/img/sertifikat/Memulai Pemrograman Dengan Dart.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <p class="card-text">
+                    Sertifikasi pelatihan Pemrograman yang diselenggarakan oleh
+                    Dicoding Indonesia
+                  </p>
+                  <b>Memulai Bahasa Pemrograman Dengan Dart.</b>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md mb-4" data-animate="fadeInUp" data-delay=".8">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="assets/img/sertifikat/Memulai Pemrograman Dengan Kotlin.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <p class="card-text">
+                    Sertifikasi pelatihan Pemrograman yang diselenggarakan oleh
+                    Dicoding Indonesia
+                  </p>
+                  <b>Memulai Pemrograman dengan Kotlin.</b>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md mb-4" data-animate="fadeInUp" data-delay=".8">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="assets/img/sertifikat/Belajar Membuat Aplikasi Android untuk Pemula.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <p class="card-text">
+                    Sertifikasi pelatihan Pemrograman yang diselenggarakan oleh
+                    Dicoding Indonesia
+                  </p>
+                  <b>Belajar Membuat Aplikasi Android untuk Pemula.</b>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="col text-center">
+            <h3 class="mb-3">Event</h3>
+          </div>
+          <div class="row">
+            <div class="col-md mb-4" data-animate="fadeInUp" data-delay=".8">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="assets/img/sertifikat/Intro to Software Product Management Certificate.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <p class="card-text">
+                    Serfitkat dari seminar online yang diselenggarakan oleh
+                    Dicoding Indonesia
+                  </p>
+                  <b>Indtro to Software Product Management.</b>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md mb-4" data-animate="fadeInUp" data-delay=".8">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="assets/img/sertifikat/Tips Menulis Kode yang Konsisten di JavaScript_ Metode ESLint! Certificate.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <p class="card-text">
+                    Serfitkat dari seminar online yang diselenggarakan oleh
+                    Dicoding Indonesia
+                  </p>
+                  <b
+                    >Tips Menulis Kode yang Konsisten di JavaScript_ Metode
+                    ESLint.</b
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md mb-4" data-animate="fadeInUp" data-delay=".8">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="assets/img/sertifikat/Memulai Karir menjadi iOS Developer.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <p class="card-text">
+                    Serfitkat dari seminar online yang diselenggarakan oleh
+                    Dicoding Indonesia
+                  </p>
+                  <b>Memulai Karir menjadi iOS Developer.</b>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md mb-4" data-animate="fadeInUp" data-delay=".8">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="assets/img/sertifikat/SQLite vs Room di Android Certificate.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <p class="card-text">
+                    Serfitkat dari seminar online yang diselenggarakan oleh
+                    Dicoding Indonesia
+                  </p>
+                  <b>SQLite vs Room di Android Certificate.</b>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Contact -->
     <section class="contact bg-light" id="contact">
-        <div class="container" data-animate="fadeInUp" data-delay=".9">
-            <div class="row pt-4 mb-4">
-                <div class="col text-center">
-                    <h2>Contact</h2>
-                </div>
-            </div>
-
-            <div class="row justify-content-center">
-                <div class="col-lg-4">
-                    <div class="card bg-dark text-white mb-4 text-center" data-animate="fadeInUp" data-delay="1.0">
-                        <div class="card-body">
-                            <h5 class="card-title text-white">Contact Me</h5>
-                            <p class="card-text">Anda bisa temui atau hubungi saya dengan info di bahwah ini.</p>
-                        </div>
-                    </div>
-
-                    <ul class="list-group mb-4" data-animate="fadeInUp" data-delay=".8">
-                        <li class="list-group-item">
-                            <h3>Location</h3>
-                        </li>
-                        <li class="list-group-item">My Office</li>
-                        <li class="list-group-item">Jl. Budiluhur RT 006 RW 003 No. 15, Bintara Jaya, Bekasi Barat</li>
-                        <li class="list-group-item">West Java, Indonesia</li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-6">
-
-                    <form data-animate="fadeInUp" data-delay="1.0">
-                        <div class="form-group">
-                            <label for="nama">Name</label>
-                            <input type="text" class="form-control" id="nama" placeholder="Nanda Putra Utama" readonly>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="text" class="form-control" id="email" placeholder="nanndaputraa08@gmail.com" readonly>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Phone Number</label>
-                            <input type="text" class="form-control" id="phone" placeholder="0812-812-106-52" readonly>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message From Me</label>
-                            <textarea class="form-control text-justify" id="message" rows="3" readonly>This life just about choice, if your choice is wrong you must can receive your risk on your choice and don't give up to make better your life.</textarea>
-                        </div>
-
-                    </form>
-
-                </div>
-            </div>
+      <div class="container" data-animate="fadeInUp" data-delay=".9">
+        <div class="row pt-4 mb-4">
+          <div class="col text-center">
+            <h2>Contact</h2>
+          </div>
         </div>
-    </section>
 
+        <div class="row justify-content-center">
+          <div class="col-lg-4">
+            <div
+              class="card bg-dark text-white mb-4 text-center"
+              data-animate="fadeInUp"
+              data-delay="1.0"
+            >
+              <div class="card-body">
+                <h5 class="card-title text-white">Contact Me</h5>
+                <p class="card-text">
+                  Anda bisa temui atau hubungi saya dengan info di bahwah ini.
+                </p>
+              </div>
+            </div>
+
+            <ul class="list-group mb-4" data-animate="fadeInUp" data-delay=".8">
+              <li class="list-group-item">
+                <h3>Location</h3>
+              </li>
+              <li class="list-group-item">My Office</li>
+              <li class="list-group-item">
+                Jl. Budiluhur RT 006 RW 003 No. 15, Bintara Jaya, Bekasi Barat
+              </li>
+              <li class="list-group-item">West Java, Indonesia</li>
+            </ul>
+          </div>
+
+          <div class="col-lg-6">
+            <form data-animate="fadeInUp" data-delay="1.0">
+              <div class="form-group">
+                <label for="nama">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nama"
+                  placeholder="Nanda Putra Utama"
+                  readonly
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="email"
+                  placeholder="nanndaputraa08@gmail.com"
+                  readonly
+                />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="phone"
+                  placeholder="0812-812-106-52"
+                  readonly
+                />
+              </div>
+              <div class="form-group">
+                <label for="message">Message From Me</label>
+                <textarea
+                  class="form-control text-justify"
+                  id="message"
+                  rows="3"
+                  readonly
+                >
+This life just about choice, if your choice is wrong you must can receive your risk on your choice and don't give up to make better your life.</textarea
+                >
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- footer -->
     <footer class="bg-dark text-white mt-5">
-        <div class="container">
-            <div class="row">
-                <div class="col text-center">
-                    <p>Copyright &copy; Nanda Putra Utama 2019.</p>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <p>Copyright &copy; Nanda Putra Utama 2019.</p>
+          </div>
         </div>
+      </div>
     </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+      integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+      integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+      crossorigin="anonymous"
+    ></script>
     <script src="assets/js/jquery-3.2.1.min.js "></script>
     <script src="assets/js/fontawesome-all.min.js "></script>
     <script src="assets/js/bootstrap.bundle.min.js "></script>
@@ -575,6 +844,5 @@
     <script src="assets/js/menu.min.js "></script>
     <script src="assets/js/scripts.js "></script>
     <script src="assets/js/custom.js "></script>
-</body>
-
+  </body>
 </html>
